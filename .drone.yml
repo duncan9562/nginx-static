@@ -1,6 +1,3 @@
 image: alpine:latest 
-services:
-  - appropriate/curl:latest
-appropriate/curl
 script:
   - curl http://alpine:80
