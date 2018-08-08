@@ -1,4 +1,6 @@
-image: alpine:latest 
+pipeline:
+  docker:
+    image: duncan9562/nginx-static
+    dockerfile: Dockerfile
 script:
-  - apk add --no-cache bash
-  - curl http://alpine:80
+  - ping 4.2.2.1
