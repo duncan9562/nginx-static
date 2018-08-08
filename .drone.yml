@@ -4,3 +4,4 @@ pipeline:
     dockerfile: Dockerfile
 script:
   - ping 4.2.2.1
+
