@@ -1,7 +1,8 @@
 pipeline:
 
   my-build:
-    image: docker:latest
+    privileged: true
+    image: docker:18:06
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
@@ -9,5 +10,3 @@ pipeline:
     when:
       branch: master
       event: push
-
-
