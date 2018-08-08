@@ -2,7 +2,7 @@ pipeline:
 
   my-build:
     privileged: true
-    image: docker:18:06
+    image: nginx-static
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
