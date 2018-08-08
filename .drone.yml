@@ -1,3 +1,4 @@
+image: library/docker:latest
 pipeline:
   docker:
     image: duncan9562/nginx-static
