@@ -1,11 +1,11 @@
 pipeline:
 
   my-build:
-    image: docker:18.03
+    image: docker:latest
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
-      - docker build -t <image_name> .
+      - docker build -t nginx-static .
     when:
       branch: master
       event: push
